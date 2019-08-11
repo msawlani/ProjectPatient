@@ -7,23 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6658B2E566CF319ACCC6B96A /* Pods_ProjectPatient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A0CDC53F85B7F0A5324B30 /* Pods_ProjectPatient.framework */; };
+		F20260F52300C85700CE0562 /* AppointmentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20260F42300C85700CE0562 /* AppointmentListViewController.swift */; };
+		F20FB37822FF9BD400C30DCB /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20FB37722FF9BD400C30DCB /* LogViewController.swift */; };
+		F251051A22F6925600E6B0FB /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F251051922F6925600E6B0FB /* Classes.swift */; };
+		F29724BB22F68DA60058BF46 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29724BA22F68DA60058BF46 /* TableViewCell.swift */; };
 		F2F0B4D722F645780063FBCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B4D622F645780063FBCA /* AppDelegate.swift */; };
-		F2F0B4D922F645780063FBCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B4D822F645780063FBCA /* ViewController.swift */; };
 		F2F0B4DC22F645780063FBCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F0B4DA22F645780063FBCA /* Main.storyboard */; };
 		F2F0B4DF22F645780063FBCA /* ProjectPatient.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B4DD22F645780063FBCA /* ProjectPatient.xcdatamodeld */; };
 		F2F0B4E122F645790063FBCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2F0B4E022F645790063FBCA /* Assets.xcassets */; };
 		F2F0B4E422F645790063FBCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F0B4E222F645790063FBCA /* LaunchScreen.storyboard */; };
+		F2F0B4EC22F64A310063FBCA /* PatientListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B4EB22F64A310063FBCA /* PatientListViewController.swift */; };
+		F2F0B4EE22F64EFA0063FBCA /* AddPatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B4ED22F64EFA0063FBCA /* AddPatientViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6826083E2DCC108880494D5E /* Pods-ProjectPatient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectPatient.release.xcconfig"; path = "Target Support Files/Pods-ProjectPatient/Pods-ProjectPatient.release.xcconfig"; sourceTree = "<group>"; };
+		75A0CDC53F85B7F0A5324B30 /* Pods_ProjectPatient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectPatient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F31ECE864649CD55EEDAF25 /* Pods-ProjectPatient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectPatient.debug.xcconfig"; path = "Target Support Files/Pods-ProjectPatient/Pods-ProjectPatient.debug.xcconfig"; sourceTree = "<group>"; };
+		F20260F42300C85700CE0562 /* AppointmentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentListViewController.swift; sourceTree = "<group>"; };
+		F20FB37722FF9BD400C30DCB /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		F251051922F6925600E6B0FB /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
+		F29724BA22F68DA60058BF46 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		F2F0B4D322F645780063FBCA /* ProjectPatient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectPatient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F0B4D622F645780063FBCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F2F0B4D822F645780063FBCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F2F0B4DB22F645780063FBCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2F0B4DE22F645780063FBCA /* ProjectPatient.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProjectPatient.xcdatamodel; sourceTree = "<group>"; };
 		F2F0B4E022F645790063FBCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2F0B4E322F645790063FBCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2F0B4E522F645790063FBCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2F0B4EB22F64A310063FBCA /* PatientListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientListViewController.swift; sourceTree = "<group>"; };
+		F2F0B4ED22F64EFA0063FBCA /* AddPatientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPatientViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6658B2E566CF319ACCC6B96A /* Pods_ProjectPatient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		620B2DA7D73A1AD087789E5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F31ECE864649CD55EEDAF25 /* Pods-ProjectPatient.debug.xcconfig */,
+				6826083E2DCC108880494D5E /* Pods-ProjectPatient.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F2F0B4CA22F645780063FBCA = {
 			isa = PBXGroup;
 			children = (
 				F2F0B4D522F645780063FBCA /* ProjectPatient */,
 				F2F0B4D422F645780063FBCA /* Products */,
+				620B2DA7D73A1AD087789E5E /* Pods */,
+				FD3C592C828BD3276CCE891C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +83,27 @@
 			isa = PBXGroup;
 			children = (
 				F2F0B4D622F645780063FBCA /* AppDelegate.swift */,
-				F2F0B4D822F645780063FBCA /* ViewController.swift */,
 				F2F0B4DA22F645780063FBCA /* Main.storyboard */,
 				F2F0B4E022F645790063FBCA /* Assets.xcassets */,
 				F2F0B4E222F645790063FBCA /* LaunchScreen.storyboard */,
 				F2F0B4E522F645790063FBCA /* Info.plist */,
 				F2F0B4DD22F645780063FBCA /* ProjectPatient.xcdatamodeld */,
+				F2F0B4EB22F64A310063FBCA /* PatientListViewController.swift */,
+				F2F0B4ED22F64EFA0063FBCA /* AddPatientViewController.swift */,
+				F29724BA22F68DA60058BF46 /* TableViewCell.swift */,
+				F251051922F6925600E6B0FB /* Classes.swift */,
+				F20FB37722FF9BD400C30DCB /* LogViewController.swift */,
+				F20260F42300C85700CE0562 /* AppointmentListViewController.swift */,
 			);
 			path = ProjectPatient;
+			sourceTree = "<group>";
+		};
+		FD3C592C828BD3276CCE891C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75A0CDC53F85B7F0A5324B30 /* Pods_ProjectPatient.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2F0B4E822F645790063FBCA /* Build configuration list for PBXNativeTarget "ProjectPatient" */;
 			buildPhases = (
+				5AAEB530E275B4DB6AF31E8B /* [CP] Check Pods Manifest.lock */,
 				F2F0B4CF22F645780063FBCA /* Sources */,
 				F2F0B4D022F645780063FBCA /* Frameworks */,
 				F2F0B4D122F645780063FBCA /* Resources */,
+				E127F0350240AB56AD0E918B /* [CP] Embed Pods Frameworks */,
+				7C28F265B0B444B567BCCC0B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,14 +175,100 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5AAEB530E275B4DB6AF31E8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProjectPatient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C28F265B0B444B567BCCC0B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProjectPatient/Pods-ProjectPatient-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProjectPatient/Pods-ProjectPatient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E127F0350240AB56AD0E918B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProjectPatient/Pods-ProjectPatient-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProjectPatient/Pods-ProjectPatient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F2F0B4CF22F645780063FBCA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2F0B4D922F645780063FBCA /* ViewController.swift in Sources */,
+				F29724BB22F68DA60058BF46 /* TableViewCell.swift in Sources */,
 				F2F0B4D722F645780063FBCA /* AppDelegate.swift in Sources */,
+				F251051A22F6925600E6B0FB /* Classes.swift in Sources */,
+				F20260F52300C85700CE0562 /* AppointmentListViewController.swift in Sources */,
 				F2F0B4DF22F645780063FBCA /* ProjectPatient.xcdatamodeld in Sources */,
+				F2F0B4EE22F64EFA0063FBCA /* AddPatientViewController.swift in Sources */,
+				F20FB37822FF9BD400C30DCB /* LogViewController.swift in Sources */,
+				F2F0B4EC22F64A310063FBCA /* PatientListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +412,7 @@
 		};
 		F2F0B4E922F645790063FBCA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F31ECE864649CD55EEDAF25 /* Pods-ProjectPatient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +431,7 @@
 		};
 		F2F0B4EA22F645790063FBCA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6826083E2DCC108880494D5E /* Pods-ProjectPatient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
