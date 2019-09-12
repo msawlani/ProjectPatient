@@ -17,8 +17,16 @@ class AppointmentListViewController: UIViewController, UITableViewDataSource, UI
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+
+
+    }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return AppointmentList.count
@@ -34,5 +42,7 @@ class AppointmentListViewController: UIViewController, UITableViewDataSource, UI
         
         return cell!
     }
+  
     
+
 }
