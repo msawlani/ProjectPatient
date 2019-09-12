@@ -11,7 +11,11 @@
 		F20260F52300C85700CE0562 /* AppointmentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20260F42300C85700CE0562 /* AppointmentListViewController.swift */; };
 		F20FB37822FF9BD400C30DCB /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20FB37722FF9BD400C30DCB /* LogViewController.swift */; };
 		F251051A22F6925600E6B0FB /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F251051922F6925600E6B0FB /* Classes.swift */; };
+		F280765B231AEC160025E385 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F280765A231AEC160025E385 /* SettingsViewController.swift */; };
+		F28A4EFD2326FF6600D73F55 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F28A4EFC2326FF6600D73F55 /* GoogleService-Info.plist */; };
 		F29724BB22F68DA60058BF46 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29724BA22F68DA60058BF46 /* TableViewCell.swift */; };
+		F2ECCCF6231B0D0800D5D1CB /* Patient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2ECCCF5231B0D0800D5D1CB /* Patient.storyboard */; };
+		F2ECCCF8231B0D6F00D5D1CB /* Doctor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2ECCCF7231B0D6F00D5D1CB /* Doctor.storyboard */; };
 		F2F0B4D722F645780063FBCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B4D622F645780063FBCA /* AppDelegate.swift */; };
 		F2F0B4DC22F645780063FBCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F0B4DA22F645780063FBCA /* Main.storyboard */; };
 		F2F0B4DF22F645780063FBCA /* ProjectPatient.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B4DD22F645780063FBCA /* ProjectPatient.xcdatamodeld */; };
@@ -28,7 +32,11 @@
 		F20260F42300C85700CE0562 /* AppointmentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentListViewController.swift; sourceTree = "<group>"; };
 		F20FB37722FF9BD400C30DCB /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		F251051922F6925600E6B0FB /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
+		F280765A231AEC160025E385 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F28A4EFC2326FF6600D73F55 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F29724BA22F68DA60058BF46 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		F2ECCCF5231B0D0800D5D1CB /* Patient.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Patient.storyboard; sourceTree = "<group>"; };
+		F2ECCCF7231B0D6F00D5D1CB /* Doctor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Doctor.storyboard; sourceTree = "<group>"; };
 		F2F0B4D322F645780063FBCA /* ProjectPatient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectPatient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F0B4D622F645780063FBCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2F0B4DB22F645780063FBCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,6 +69,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F2ECCCF9231B120100D5D1CB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F2ECCCF7231B0D6F00D5D1CB /* Doctor.storyboard */,
+				F2ECCCF5231B0D0800D5D1CB /* Patient.storyboard */,
+				F2F0B4DA22F645780063FBCA /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		F2F0B4CA22F645780063FBCA = {
 			isa = PBXGroup;
 			children = (
@@ -82,8 +100,8 @@
 		F2F0B4D522F645780063FBCA /* ProjectPatient */ = {
 			isa = PBXGroup;
 			children = (
+				F2ECCCF9231B120100D5D1CB /* Storyboards */,
 				F2F0B4D622F645780063FBCA /* AppDelegate.swift */,
-				F2F0B4DA22F645780063FBCA /* Main.storyboard */,
 				F2F0B4E022F645790063FBCA /* Assets.xcassets */,
 				F2F0B4E222F645790063FBCA /* LaunchScreen.storyboard */,
 				F2F0B4E522F645790063FBCA /* Info.plist */,
@@ -94,6 +112,8 @@
 				F251051922F6925600E6B0FB /* Classes.swift */,
 				F20FB37722FF9BD400C30DCB /* LogViewController.swift */,
 				F20260F42300C85700CE0562 /* AppointmentListViewController.swift */,
+				F280765A231AEC160025E385 /* SettingsViewController.swift */,
+				F28A4EFC2326FF6600D73F55 /* GoogleService-Info.plist */,
 			);
 			path = ProjectPatient;
 			sourceTree = "<group>";
@@ -169,7 +189,10 @@
 			files = (
 				F2F0B4E422F645790063FBCA /* LaunchScreen.storyboard in Resources */,
 				F2F0B4E122F645790063FBCA /* Assets.xcassets in Resources */,
+				F2ECCCF6231B0D0800D5D1CB /* Patient.storyboard in Resources */,
+				F2ECCCF8231B0D6F00D5D1CB /* Doctor.storyboard in Resources */,
 				F2F0B4DC22F645780063FBCA /* Main.storyboard in Resources */,
+				F28A4EFD2326FF6600D73F55 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +292,7 @@
 				F2F0B4EE22F64EFA0063FBCA /* AddPatientViewController.swift in Sources */,
 				F20FB37822FF9BD400C30DCB /* LogViewController.swift in Sources */,
 				F2F0B4EC22F64A310063FBCA /* PatientListViewController.swift in Sources */,
+				F280765B231AEC160025E385 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
