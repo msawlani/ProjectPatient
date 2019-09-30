@@ -14,6 +14,7 @@ target 'ProjectPatient' do
   pod 'Firebase/Database'
 
   pod 'FirebaseUI/Google'
-
+ 
+  pod 'Firebase/Firestore'
 
 end

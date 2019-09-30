@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1041695873372-6t71hng6ctaesn22it5c2gf952vab1fm.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1041695873372-6t71hng6ctaesn22it5c2gf952vab1fm</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAFBukeFRhY88PihJ-O3F3vyp4sBH5zigY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1041695873372</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>michael.ProjectPatient</string>
+	<key>PROJECT_ID</key>
+	<string>projectpatient-bf435</string>
+	<key>STORAGE_BUCKET</key>
+	<string>projectpatient-bf435.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1041695873372:ios:d27b81cc11f24aede18999</string>
+	<key>DATABASE_URL</key>
+	<string>https://projectpatient-bf435.firebaseio.com</string>
+</dict>
+</plist>
