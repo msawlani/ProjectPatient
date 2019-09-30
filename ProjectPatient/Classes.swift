@@ -17,3 +17,14 @@ class Patient{
         self.age = age
     }
 }
+
+class Doctor{
+    var doctorName: String
+    
+    var appointmentList: [Patient] = []
+    
+    init(name: String = "") {
+        self.doctorName = name
+    }
+}
+
