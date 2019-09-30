@@ -7,13 +7,20 @@
 //
 
 import UIKit
+import Firebase
+
 
 class AddPatientViewController: UIViewController {
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var ageTextField: UITextField!
+    var docRef: DocumentReference?
+    var doc: Doctor?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        docRef = Firestore.firestore().document("Patients/appointments")
         
         navigationItem.hidesBackButton = true;
         
@@ -39,10 +46,13 @@ class AddPatientViewController: UIViewController {
         }
         
         home.PatientList.append(patient)
+        doc?.appointmentList.append(patient)
+        
         self.navigationController?.popViewController(animated: true)
     }
     
     @objc func BackButton(){
+        if !nameTextField.text!.isEmpty || !ageTextField.text!.isEmpty{
         let alert = UIAlertController(title: "Going Back?", message: "Doing this will lose all data on this page", preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "NO", style: .default, handler: nil))
@@ -53,7 +63,9 @@ class AddPatientViewController: UIViewController {
         }))
         
         self.present(alert, animated: true)
-        
+        }
+        self.navigationController?.popViewController(animated: true)
+
     }
     
     
