@@ -12,8 +12,7 @@ class LogViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     @IBAction func DoctorLogin(_ sender: Any) {
         self.performSegue(withIdentifier: "DoctorLog", sender: self)
