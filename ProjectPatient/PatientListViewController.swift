@@ -13,7 +13,7 @@ class PatientListViewController: UIViewController, UITableViewDelegate, UITableV
     
     @IBOutlet weak var Table: UITableView!
 
-    var PatientList: [Patient] = []
+    var PatientList: [Appointment] = []
     var testList: [String] = ["mike", "nick"]
 
     override func viewDidLoad() {

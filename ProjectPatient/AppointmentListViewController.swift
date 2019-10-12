@@ -11,7 +11,7 @@ import UIKit
 class AppointmentListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var Table: UITableView!
-    var AppointmentList: [Patient] = []
+    var AppointmentList: [Appointment] = []
 
 
     override func viewDidLoad() {
