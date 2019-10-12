@@ -12,15 +12,23 @@ import Firebase
 
 class AddPatientViewController: UIViewController {
 
+
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var ageTextField: UITextField!
-    var docRef: DocumentReference?
-    var doc: Doctor?
+    @IBOutlet weak var timeTextField: UITextField!
+    @IBOutlet weak var DoBTextField: UITextField!
+    @IBOutlet weak var GenderTextField: UITextField!
+    @IBOutlet weak var EmailTextField: UITextField!
+    @IBOutlet weak var phoneTextField: UITextField!
+    @IBOutlet weak var doctorTextField: UITextField!
+    @IBOutlet weak var dateTextField: UITextField!
+    @IBOutlet weak var discriptionTextField: UITextView!
+    
+    var time = ""
+    var ref: DatabaseReference?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        docRef = Firestore.firestore().document("Patients/appointments")
         
         navigationItem.hidesBackButton = true;
         
@@ -31,7 +39,17 @@ class AddPatientViewController: UIViewController {
         self.navigationItem.rightBarButtonItem = doneNavButton
         self.navigationItem.leftBarButtonItem = backNavButton
         
+            timeTextField.text = time
+        ref = Database.database().reference()
+        
         // Do any additional setup after loading the view.
+    }
+    
+
+    
+    override func viewDidAppear(_ animated: Bool) {
+        timeTextField.text = time
+
     }
     
     @objc func DoneButton(){
@@ -46,7 +64,6 @@ class AddPatientViewController: UIViewController {
         }
         
         home.PatientList.append(patient)
-        doc?.appointmentList.append(patient)
         
         self.navigationController?.popViewController(animated: true)
     }
@@ -69,8 +86,8 @@ class AddPatientViewController: UIViewController {
     }
     
     
-    func createPatient() -> Patient {
-        let patient = Patient(name: nameTextField.text!, age: ageTextField.text!)
+    func createPatient() -> Appointment {
+        let patient = Appointment(name: nameTextField.text!, age: ageTextField.text!)
         return patient
     }
     

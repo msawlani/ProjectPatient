@@ -17,6 +17,7 @@
 		F280765B231AEC160025E385 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F280765A231AEC160025E385 /* SettingsViewController.swift */; };
 		F29724BB22F68DA60058BF46 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29724BA22F68DA60058BF46 /* TableViewCell.swift */; };
 		F29C2A8B232D58DA00FAE08B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F29C2A8A232D58DA00FAE08B /* GoogleService-Info.plist */; };
+		F2C0BFFB2352989000EBE8B1 /* PatientLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0BFFA2352989000EBE8B1 /* PatientLogViewController.swift */; };
 		F2ECCCF6231B0D0800D5D1CB /* Patient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2ECCCF5231B0D0800D5D1CB /* Patient.storyboard */; };
 		F2ECCCF8231B0D6F00D5D1CB /* Doctor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2ECCCF7231B0D6F00D5D1CB /* Doctor.storyboard */; };
 		F2F0B4D722F645780063FBCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B4D622F645780063FBCA /* AppDelegate.swift */; };
@@ -26,6 +27,7 @@
 		F2F0B4E422F645790063FBCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F0B4E222F645790063FBCA /* LaunchScreen.storyboard */; };
 		F2F0B4EC22F64A310063FBCA /* PatientListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B4EB22F64A310063FBCA /* PatientListViewController.swift */; };
 		F2F0B4EE22F64EFA0063FBCA /* AddPatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B4ED22F64EFA0063FBCA /* AddPatientViewController.swift */; };
+		F2FE7CA62343DD10002273DA /* TimeSlotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE7CA52343DD10002273DA /* TimeSlotTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,7 @@
 		F280765A231AEC160025E385 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		F29724BA22F68DA60058BF46 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		F29C2A8A232D58DA00FAE08B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F2C0BFFA2352989000EBE8B1 /* PatientLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientLogViewController.swift; sourceTree = "<group>"; };
 		F2ECCCF5231B0D0800D5D1CB /* Patient.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Patient.storyboard; sourceTree = "<group>"; };
 		F2ECCCF7231B0D6F00D5D1CB /* Doctor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Doctor.storyboard; sourceTree = "<group>"; };
 		F2F0B4D322F645780063FBCA /* ProjectPatient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectPatient.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +55,7 @@
 		F2F0B4E522F645790063FBCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2F0B4EB22F64A310063FBCA /* PatientListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientListViewController.swift; sourceTree = "<group>"; };
 		F2F0B4ED22F64EFA0063FBCA /* AddPatientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPatientViewController.swift; sourceTree = "<group>"; };
+		F2FE7CA52343DD10002273DA /* TimeSlotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSlotTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 				F231CCD62332E4680085690B /* DoctorListViewController.swift */,
 				F231CCD82332E4880085690B /* DoctorsCollectionViewCell.swift */,
 				F2742B542333FA9800F36DD2 /* DoctorsViewController.swift */,
+				F2FE7CA52343DD10002273DA /* TimeSlotTableViewCell.swift */,
+				F2C0BFFA2352989000EBE8B1 /* PatientLogViewController.swift */,
 			);
 			path = ProjectPatient;
 			sourceTree = "<group>";
@@ -303,7 +309,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F29724BB22F68DA60058BF46 /* TableViewCell.swift in Sources */,
+				F2C0BFFB2352989000EBE8B1 /* PatientLogViewController.swift in Sources */,
 				F2742B552333FA9800F36DD2 /* DoctorsViewController.swift in Sources */,
+				F2FE7CA62343DD10002273DA /* TimeSlotTableViewCell.swift in Sources */,
 				F2F0B4D722F645780063FBCA /* AppDelegate.swift in Sources */,
 				F251051A22F6925600E6B0FB /* Classes.swift in Sources */,
 				F20260F52300C85700CE0562 /* AppointmentListViewController.swift in Sources */,
