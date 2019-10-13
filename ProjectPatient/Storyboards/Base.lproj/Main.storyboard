@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhw-eS-2qZ">
-                                <rect key="frame" x="157.66666666666666" y="477" width="94" height="30"/>
+                                <rect key="frame" x="157.66666666666666" y="421" width="94" height="30"/>
                                 <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Patient Login "/>
                                 <connections>
@@ -26,12 +26,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUh-Tr-t4q">
-                                <rect key="frame" x="162.66666666666666" y="439" width="89" height="30"/>
+                                <rect key="frame" x="162.66666666666666" y="383" width="89" height="30"/>
                                 <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Doctor Login"/>
                                 <connections>
                                     <action selector="DoctorLogin:" destination="ig9-FX-WJM" eventType="touchUpInside" id="BFL-3w-bdV"/>
-                                    <segue destination="iJH-td-xtw" kind="show" identifier="DoctorLog" id="xS4-8E-EUR"/>
+                                    <segue destination="qYj-bv-YA4" kind="show" identifier="DoctorLog" id="LQ7-cO-Vtd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -122,7 +122,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rkv-WI-VdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3043" y="-272"/>
+            <point key="canvasLocation" x="-1791" y="-1124"/>
         </scene>
         <!--Patient Login-->
         <scene sceneID="PXq-Kk-b9t">
@@ -166,7 +166,7 @@
                                 <rect key="frame" x="36" y="443" width="343" height="40"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="Login:" destination="DtD-en-RtI" eventType="touchUpInside" id="ndA-Rf-802"/>
@@ -176,7 +176,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sw9-aF-AZn">
                                 <rect key="frame" x="146" y="772" width="122" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Not a patient?"/>
                                 <connections>
                                     <action selector="Back:" destination="DtD-en-RtI" eventType="touchUpInside" id="YXd-nD-ua3"/>
@@ -220,8 +220,9 @@
         <scene sceneID="gpS-qI-Qz8">
             <objects>
                 <navigationController id="qYj-bv-YA4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="rRj-V8-Swr"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZTH-au-FTJ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -232,24 +233,104 @@
             </objects>
             <point key="canvasLocation" x="-3284" y="-1125"/>
         </scene>
-        <!--Patient Login-->
+        <!--Doctor Login-->
         <scene sceneID="odO-5V-0QN">
             <objects>
-                <viewController id="wk6-BK-VdM" sceneMemberID="viewController">
+                <viewController id="wk6-BK-VdM" customClass="DoctorLogViewController" customModule="ProjectPatient" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QlW-wT-VS1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aro-XY-bgR">
+                                <rect key="frame" x="36" y="423" width="112" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="112" id="w3k-46-NFB"/>
+                                    <constraint firstAttribute="height" constant="34" id="zoC-wz-czI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QD4-eJ-xnn">
+                                <rect key="frame" x="114" y="381" width="264" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QQf-w2-YvC">
+                                <rect key="frame" x="156" y="423" width="222" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbQ-vX-fgS">
+                                <rect key="frame" x="36" y="465" width="342" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="R80-Ly-y0a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="DoctorMain:" destination="wk6-BK-VdM" eventType="touchUpInside" id="5RH-Zq-MQs"/>
+                                    <action selector="Login:" destination="DtD-en-RtI" eventType="touchUpInside" id="AkH-Ef-jvB"/>
+                                    <segue destination="iJH-td-xtw" kind="showDetail" identifier="DoctorMain" id="fxN-Ud-XeB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FR-ue-85T">
+                                <rect key="frame" x="148" y="772" width="118" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Not a doctor?"/>
+                                <connections>
+                                    <action selector="Back:" destination="DtD-en-RtI" eventType="touchUpInside" id="KxZ-41-mLg"/>
+                                    <action selector="Back:" destination="wk6-BK-VdM" eventType="touchUpInside" id="VOj-iS-GeC"/>
+                                    <segue destination="ig9-FX-WJM" kind="show" identifier="Back" id="bgt-fB-neD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3z-o3-UhE">
+                                <rect key="frame" x="36" y="381" width="70" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="5uM-Sv-XyT"/>
+                                    <constraint firstAttribute="width" constant="70" id="hD9-cM-XsW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Aro-XY-bgR" firstAttribute="top" secondItem="QQf-w2-YvC" secondAttribute="top" id="1Qe-KQ-evI"/>
+                            <constraint firstItem="QQf-w2-YvC" firstAttribute="trailing" secondItem="vbQ-vX-fgS" secondAttribute="trailing" id="4Ug-I1-g42"/>
+                            <constraint firstItem="y3z-o3-UhE" firstAttribute="leading" secondItem="hGf-rB-V0e" secondAttribute="leading" constant="36" id="51R-Ug-vnK"/>
+                            <constraint firstItem="Aro-XY-bgR" firstAttribute="top" secondItem="y3z-o3-UhE" secondAttribute="bottom" constant="8" id="E6Y-oW-RcR"/>
+                            <constraint firstItem="y3z-o3-UhE" firstAttribute="leading" secondItem="Aro-XY-bgR" secondAttribute="leading" id="IHA-se-VKu"/>
+                            <constraint firstItem="vbQ-vX-fgS" firstAttribute="top" secondItem="Aro-XY-bgR" secondAttribute="bottom" constant="8" id="JuV-X1-uFc"/>
+                            <constraint firstItem="QD4-eJ-xnn" firstAttribute="trailing" secondItem="QQf-w2-YvC" secondAttribute="trailing" id="NtM-IV-cwb"/>
+                            <constraint firstItem="QD4-eJ-xnn" firstAttribute="leading" secondItem="y3z-o3-UhE" secondAttribute="trailing" constant="8" id="R7U-ku-sJv"/>
+                            <constraint firstItem="vbQ-vX-fgS" firstAttribute="centerX" secondItem="QlW-wT-VS1" secondAttribute="centerX" id="RnD-ch-j2W"/>
+                            <constraint firstItem="y3z-o3-UhE" firstAttribute="top" secondItem="QD4-eJ-xnn" secondAttribute="top" id="W8d-K9-fuK"/>
+                            <constraint firstItem="Aro-XY-bgR" firstAttribute="leading" secondItem="vbQ-vX-fgS" secondAttribute="leading" id="g1D-mh-qjm"/>
+                            <constraint firstItem="1FR-ue-85T" firstAttribute="bottom" secondItem="hGf-rB-V0e" secondAttribute="bottom" id="jN3-kW-H67"/>
+                            <constraint firstItem="y3z-o3-UhE" firstAttribute="top" secondItem="hGf-rB-V0e" secondAttribute="top" constant="325" id="jgW-gz-mDF"/>
+                            <constraint firstItem="vbQ-vX-fgS" firstAttribute="centerX" secondItem="1FR-ue-85T" secondAttribute="centerX" id="pWn-Se-xW3"/>
+                            <constraint firstItem="QQf-w2-YvC" firstAttribute="leading" secondItem="Aro-XY-bgR" secondAttribute="trailing" constant="8" id="xZM-L0-VkW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hGf-rB-V0e"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Patient Login" id="lvf-bZ-Kq2"/>
+                    <navigationItem key="navigationItem" title="Doctor Login" id="lvf-bZ-Kq2"/>
+                    <connections>
+                        <outlet property="emailFieldText" destination="QD4-eJ-xnn" id="wD1-4O-O78"/>
+                        <outlet property="loginBTN" destination="vbQ-vX-fgS" id="gYE-nI-A3T"/>
+                        <outlet property="passwordFieldText" destination="QQf-w2-YvC" id="1gq-Ol-L2Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jK4-hF-QR1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2417" y="-1124"/>
+            <point key="canvasLocation" x="-2417.3913043478265" y="-1124.3303571428571"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Qzq-Pe-n23"/>
+        <segue reference="AZ8-gB-80C"/>
     </inferredMetricsTieBreakers>
 </document>

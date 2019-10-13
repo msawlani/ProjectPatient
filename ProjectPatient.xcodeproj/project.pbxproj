@@ -13,6 +13,7 @@
 		F231CCD72332E4680085690B /* DoctorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231CCD62332E4680085690B /* DoctorListViewController.swift */; };
 		F231CCD92332E4880085690B /* DoctorsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231CCD82332E4880085690B /* DoctorsCollectionViewCell.swift */; };
 		F251051A22F6925600E6B0FB /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F251051922F6925600E6B0FB /* Classes.swift */; };
+		F25DC4722353D8A900E82A57 /* DoctorLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DC4712353D8A900E82A57 /* DoctorLogViewController.swift */; };
 		F2742B552333FA9800F36DD2 /* DoctorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2742B542333FA9800F36DD2 /* DoctorsViewController.swift */; };
 		F280765B231AEC160025E385 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F280765A231AEC160025E385 /* SettingsViewController.swift */; };
 		F29724BB22F68DA60058BF46 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29724BA22F68DA60058BF46 /* TableViewCell.swift */; };
@@ -39,6 +40,7 @@
 		F231CCD62332E4680085690B /* DoctorListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorListViewController.swift; sourceTree = "<group>"; };
 		F231CCD82332E4880085690B /* DoctorsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsCollectionViewCell.swift; sourceTree = "<group>"; };
 		F251051922F6925600E6B0FB /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
+		F25DC4712353D8A900E82A57 /* DoctorLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorLogViewController.swift; sourceTree = "<group>"; };
 		F2742B542333FA9800F36DD2 /* DoctorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsViewController.swift; sourceTree = "<group>"; };
 		F280765A231AEC160025E385 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		F29724BA22F68DA60058BF46 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				F2742B542333FA9800F36DD2 /* DoctorsViewController.swift */,
 				F2FE7CA52343DD10002273DA /* TimeSlotTableViewCell.swift */,
 				F2C0BFFA2352989000EBE8B1 /* PatientLogViewController.swift */,
+				F25DC4712353D8A900E82A57 /* DoctorLogViewController.swift */,
 			);
 			path = ProjectPatient;
 			sourceTree = "<group>";
@@ -243,20 +246,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ProjectPatient/Pods-ProjectPatient-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-ProjectPatient/Pods-ProjectPatient-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-ProjectPatient/Pods-ProjectPatient-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -269,32 +263,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ProjectPatient/Pods-ProjectPatient-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-ProjectPatient/Pods-ProjectPatient-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-ProjectPatient/Pods-ProjectPatient-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -313,6 +286,7 @@
 				F2742B552333FA9800F36DD2 /* DoctorsViewController.swift in Sources */,
 				F2FE7CA62343DD10002273DA /* TimeSlotTableViewCell.swift in Sources */,
 				F2F0B4D722F645780063FBCA /* AppDelegate.swift in Sources */,
+				F25DC4722353D8A900E82A57 /* DoctorLogViewController.swift in Sources */,
 				F251051A22F6925600E6B0FB /* Classes.swift in Sources */,
 				F20260F52300C85700CE0562 /* AppointmentListViewController.swift in Sources */,
 				F2F0B4DF22F645780063FBCA /* ProjectPatient.xcdatamodeld in Sources */,
