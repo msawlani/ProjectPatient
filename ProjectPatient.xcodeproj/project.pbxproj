@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		F29724BB22F68DA60058BF46 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29724BA22F68DA60058BF46 /* TableViewCell.swift */; };
 		F29C2A8B232D58DA00FAE08B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F29C2A8A232D58DA00FAE08B /* GoogleService-Info.plist */; };
 		F2C0BFFB2352989000EBE8B1 /* PatientLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0BFFA2352989000EBE8B1 /* PatientLogViewController.swift */; };
+		F2D7396E235790F5003B0A0F /* PatientSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D7396D235790F5003B0A0F /* PatientSignupViewController.swift */; };
 		F2ECCCF6231B0D0800D5D1CB /* Patient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2ECCCF5231B0D0800D5D1CB /* Patient.storyboard */; };
 		F2ECCCF8231B0D6F00D5D1CB /* Doctor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2ECCCF7231B0D6F00D5D1CB /* Doctor.storyboard */; };
 		F2F0B4D722F645780063FBCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B4D622F645780063FBCA /* AppDelegate.swift */; };
@@ -46,6 +47,7 @@
 		F29724BA22F68DA60058BF46 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		F29C2A8A232D58DA00FAE08B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F2C0BFFA2352989000EBE8B1 /* PatientLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientLogViewController.swift; sourceTree = "<group>"; };
+		F2D7396D235790F5003B0A0F /* PatientSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientSignupViewController.swift; sourceTree = "<group>"; };
 		F2ECCCF5231B0D0800D5D1CB /* Patient.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Patient.storyboard; sourceTree = "<group>"; };
 		F2ECCCF7231B0D6F00D5D1CB /* Doctor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Doctor.storyboard; sourceTree = "<group>"; };
 		F2F0B4D322F645780063FBCA /* ProjectPatient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectPatient.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,7 +114,6 @@
 		F2F0B4D522F645780063FBCA /* ProjectPatient */ = {
 			isa = PBXGroup;
 			children = (
-				F2ECCCF9231B120100D5D1CB /* Storyboards */,
 				F2F0B4D622F645780063FBCA /* AppDelegate.swift */,
 				F2F0B4E022F645790063FBCA /* Assets.xcassets */,
 				F2F0B4E222F645790063FBCA /* LaunchScreen.storyboard */,
@@ -132,6 +133,8 @@
 				F2FE7CA52343DD10002273DA /* TimeSlotTableViewCell.swift */,
 				F2C0BFFA2352989000EBE8B1 /* PatientLogViewController.swift */,
 				F25DC4712353D8A900E82A57 /* DoctorLogViewController.swift */,
+				F2D7396D235790F5003B0A0F /* PatientSignupViewController.swift */,
+				F2ECCCF9231B120100D5D1CB /* Storyboards */,
 			);
 			path = ProjectPatient;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			files = (
 				F29724BB22F68DA60058BF46 /* TableViewCell.swift in Sources */,
 				F2C0BFFB2352989000EBE8B1 /* PatientLogViewController.swift in Sources */,
+				F2D7396E235790F5003B0A0F /* PatientSignupViewController.swift in Sources */,
 				F2742B552333FA9800F36DD2 /* DoctorsViewController.swift in Sources */,
 				F2FE7CA62343DD10002273DA /* TimeSlotTableViewCell.swift in Sources */,
 				F2F0B4D722F645780063FBCA /* AppDelegate.swift in Sources */,
