@@ -20,6 +20,8 @@ class PatientLogViewController: UIViewController {
     @IBAction func Login(_ sender: Any) {
         self.performSegue(withIdentifier: "PatientMain", sender: self)
     }
+    @IBAction func SignUp(_ sender: Any) {
+    }
     
     @IBAction func Back(_ sender: Any) {
         
