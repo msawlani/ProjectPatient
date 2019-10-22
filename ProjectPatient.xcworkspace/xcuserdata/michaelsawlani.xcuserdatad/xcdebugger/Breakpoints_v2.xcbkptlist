@@ -57,7 +57,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "0E5ECD93-2F41-425F-BD77-9CDC30EEC208"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProjectPatient/DoctorLogViewController.swift"
@@ -65,12 +65,12 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "11"
             endingLineNumber = "11"
-            landmarkName = "DoctorLogViewController"
-            landmarkType = "3">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "0E5ECD93-2F41-425F-BD77-9CDC30EEC208 - 8faf18c8ca4def20"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "ProjectPatient.DoctorLogViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; ProjectPatient.DoctorLogViewController"
@@ -85,7 +85,7 @@
                </Location>
                <Location
                   uuid = "0E5ECD93-2F41-425F-BD77-9CDC30EEC208 - e7da91e16d71003"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "ProjectPatient.DoctorLogViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; ProjectPatient.DoctorLogViewController"
@@ -100,7 +100,7 @@
                </Location>
                <Location
                   uuid = "0E5ECD93-2F41-425F-BD77-9CDC30EEC208 - e3c466021115a147"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "ProjectPatient.DoctorLogViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ProjectPatient.DoctorLogViewController&gt;"
@@ -115,7 +115,7 @@
                </Location>
                <Location
                   uuid = "0E5ECD93-2F41-425F-BD77-9CDC30EEC208 - 13ca811d7154998a"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "ProjectPatient.DoctorLogViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ProjectPatient.DoctorLogViewController&gt;"
@@ -130,7 +130,7 @@
                </Location>
                <Location
                   uuid = "0E5ECD93-2F41-425F-BD77-9CDC30EEC208 - 1b0a0b16c4208299"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "ProjectPatient.DoctorLogViewController.__deallocating_deinit"

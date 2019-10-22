@@ -26,6 +26,7 @@ class AddPatientViewController: UIViewController {
     
     var time = ""
     var ref: DatabaseReference?
+    private var timePicker: UIDatePicker?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +43,15 @@ class AddPatientViewController: UIViewController {
             timeTextField.text = time
         ref = Database.database().reference()
         
+        timePicker = UIDatePicker()
+        timePicker?.datePickerMode = .time
+        timeTextField.inputView = timePicker
+        timePicker?.addTarget(self, action: #selector(timeChanged(timePicker:)), for: .valueChanged)
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(viewTapped(gestureRecognizer: )))
+        
+        view.addGestureRecognizer(tapGesture)
+        
         // Do any additional setup after loading the view.
     }
     
@@ -49,7 +59,17 @@ class AddPatientViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         timeTextField.text = time
-
+    }
+    
+    @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer){
+        view.endEditing(true)
+    }
+    
+    @objc func timeChanged(timePicker: UIDatePicker){
+        let timeFormat = DateFormatter()
+        timeFormat.dateFormat = "h:m:s"
+        timeTextField.text = timeFormat.string(from: timePicker.date)
+        view.endEditing(true)
     }
     
     @objc func DoneButton(){
