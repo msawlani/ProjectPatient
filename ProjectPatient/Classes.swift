@@ -7,6 +7,49 @@
 //
 
 import Foundation
+import Firebase
+
+
+class Doctor{
+    var doctorName: String
+    
+    var appointmentList: [Appointment] = []
+    
+    init(name: String = "") {
+        self.doctorName = name
+    }
+    
+}
+
+class Users: NSObject{
+    var email:String
+    var phoneNumber: String
+    var patients: [PatientAccount] = []
+    var ref: DatabaseReference?
+    
+    init(email:String = "", phoneNumber: String = "") {
+        self.email = email
+        self.phoneNumber = phoneNumber
+    }
+    
+    func StoreinFirebase(){
+        
+    }
+}
+
+
+class PatientAccount{
+    var email:String
+    var phoneNumber: String
+    var appointments: [Appointment] = []
+    var ref: DatabaseReference?
+    
+    init(email:String = "", phoneNumber: String = "") {
+        self.email = email
+        self.phoneNumber = phoneNumber
+    }
+    
+}
 
 class Appointment{
     var name: String
@@ -31,25 +74,4 @@ class Appointment{
     }
 }
 
-class Doctor{
-    var doctorName: String
-    
-    var appointmentList: [Appointment] = []
-    
-    init(name: String = "") {
-        self.doctorName = name
-    }
-    
-}
-
-class PatientAccount{
-    var email:String
-    var phoneNumber: String
-    var appointments: [Appointment] = []
-    
-    init(email:String = "", phoneNumber: String = "") {
-        self.email = email
-        self.phoneNumber = phoneNumber
-    }
-}
 

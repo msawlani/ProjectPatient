@@ -31,6 +31,8 @@ class AddPatientViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         navigationItem.hidesBackButton = true;
         
         let backNavButton = UIBarButtonItem(title: "<", style: .done, target: self, action: #selector(BackButton))
@@ -84,6 +86,7 @@ class AddPatientViewController: UIViewController {
         }
         
         home.PatientList.append(patient)
+        
         
         self.navigationController?.popViewController(animated: true)
     }

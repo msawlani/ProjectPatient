@@ -24,7 +24,6 @@
 		F2ECCCF8231B0D6F00D5D1CB /* Doctor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2ECCCF7231B0D6F00D5D1CB /* Doctor.storyboard */; };
 		F2F0B4D722F645780063FBCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B4D622F645780063FBCA /* AppDelegate.swift */; };
 		F2F0B4DC22F645780063FBCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F0B4DA22F645780063FBCA /* Main.storyboard */; };
-		F2F0B4DF22F645780063FBCA /* ProjectPatient.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B4DD22F645780063FBCA /* ProjectPatient.xcdatamodeld */; };
 		F2F0B4E122F645790063FBCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2F0B4E022F645790063FBCA /* Assets.xcassets */; };
 		F2F0B4E422F645790063FBCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F0B4E222F645790063FBCA /* LaunchScreen.storyboard */; };
 		F2F0B4EC22F64A310063FBCA /* PatientListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B4EB22F64A310063FBCA /* PatientListViewController.swift */; };
@@ -53,7 +52,6 @@
 		F2F0B4D322F645780063FBCA /* ProjectPatient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectPatient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F0B4D622F645780063FBCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2F0B4DB22F645780063FBCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F2F0B4DE22F645780063FBCA /* ProjectPatient.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProjectPatient.xcdatamodel; sourceTree = "<group>"; };
 		F2F0B4E022F645790063FBCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2F0B4E322F645790063FBCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2F0B4E522F645790063FBCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 				F2F0B4E022F645790063FBCA /* Assets.xcassets */,
 				F2F0B4E222F645790063FBCA /* LaunchScreen.storyboard */,
 				F2F0B4E522F645790063FBCA /* Info.plist */,
-				F2F0B4DD22F645780063FBCA /* ProjectPatient.xcdatamodeld */,
 				F2F0B4EB22F64A310063FBCA /* PatientListViewController.swift */,
 				F2F0B4ED22F64EFA0063FBCA /* AddPatientViewController.swift */,
 				F29724BA22F68DA60058BF46 /* TableViewCell.swift */,
@@ -293,7 +290,6 @@
 				F25DC4722353D8A900E82A57 /* DoctorLogViewController.swift in Sources */,
 				F251051A22F6925600E6B0FB /* Classes.swift in Sources */,
 				F20260F52300C85700CE0562 /* AppointmentListViewController.swift in Sources */,
-				F2F0B4DF22F645780063FBCA /* ProjectPatient.xcdatamodeld in Sources */,
 				F231CCD72332E4680085690B /* DoctorListViewController.swift in Sources */,
 				F2F0B4EE22F64EFA0063FBCA /* AddPatientViewController.swift in Sources */,
 				F20FB37822FF9BD400C30DCB /* LogViewController.swift in Sources */,
@@ -501,19 +497,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		F2F0B4DD22F645780063FBCA /* ProjectPatient.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				F2F0B4DE22F645780063FBCA /* ProjectPatient.xcdatamodel */,
-			);
-			currentVersion = F2F0B4DE22F645780063FBCA /* ProjectPatient.xcdatamodel */;
-			path = ProjectPatient.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = F2F0B4CB22F645780063FBCA /* Project object */;
 }
