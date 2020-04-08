@@ -17,7 +17,7 @@ class DoctorsViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     var name = ""
 
-    let time = ["10:00am", "11:00am"]
+    let time = ["10:00 AM", "11:00 AM"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +47,7 @@ class DoctorsViewController: UIViewController, UITableViewDelegate, UITableViewD
         let vc = storyboard?.instantiateViewController(withIdentifier: "AddPatientViewController") as? AddPatientViewController
         
         vc?.time = time[indexPath.row]
+        vc?.doctorName = DoctorName.text!
         
         self.navigationController?.pushViewController(vc!, animated: true)
     }

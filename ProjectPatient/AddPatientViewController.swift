@@ -25,8 +25,10 @@ class AddPatientViewController: UIViewController {
     @IBOutlet weak var discriptionTextField: UITextView!
     
     var time = ""
+    var doctorName = ""
     var ref: DatabaseReference?
     private var timePicker: UIDatePicker?
+    private var datePicker: UIDatePicker?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +51,14 @@ class AddPatientViewController: UIViewController {
         timePicker?.datePickerMode = .time
         timeTextField.inputView = timePicker
         timePicker?.addTarget(self, action: #selector(timeChanged(timePicker:)), for: .valueChanged)
+    
+        datePicker = UIDatePicker()
+        datePicker?.datePickerMode = .date
+        dateTextField.inputView = datePicker
+        datePicker?.addTarget(self, action: #selector(dateChanged(datePicker:)), for: .valueChanged)
+        
+        
+        doctorTextField.text = doctorName
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(viewTapped(gestureRecognizer: )))
         
@@ -67,10 +77,18 @@ class AddPatientViewController: UIViewController {
         view.endEditing(true)
     }
     
+    
     @objc func timeChanged(timePicker: UIDatePicker){
         let timeFormat = DateFormatter()
-        timeFormat.dateFormat = "h:m:s"
+        timeFormat.dateFormat = "hh:mm a"
         timeTextField.text = timeFormat.string(from: timePicker.date)
+        view.endEditing(true)
+    }
+    
+    @objc func dateChanged(datePicker: UIDatePicker){
+        let dateFormat = DateFormatter()
+        dateFormat.dateFormat = "m/dd/yy"
+        dateTextField.text = dateFormat.string(from: datePicker.date)
         view.endEditing(true)
     }
     
